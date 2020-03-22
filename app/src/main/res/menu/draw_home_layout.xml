@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/drawer_menu_CZZ"
+        android:icon="@drawable/facebook_outline"
+        android:title="联系作者" />
+    <item
+        android:id="@+id/drawer_menu_FWGW"
+        android:title="访问官网"
+        android:icon="@drawable/globe_outline"/>
+    <item
+        android:id="@+id/drawer_menu_update"
+        android:title="下载更新"
+        android:icon="@drawable/globe_outline"/>
+    <item
+        android:id="@+id/drawer_menu_QFK"
+        android:title="问题反馈"
+        android:icon="@drawable/link_2_outline"/>
+    <item
+        android:id="@+id/drawer_menu_logout"
+        android:title="注销登陆"
+        android:icon="@drawable/log_out_outline"/>
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:background="@drawable/yellowman"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title1"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_iotview"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/iotdevice_add"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_pressed"
+        android:text="添加"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff" />
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="User"></dbname>
+    <version value="4"></version>
+    <list>
+        <mapping class="cn.edu.cqupt.my.UserMessage"/>
+        <mapping class="cn.edu.cqupt.my.Contact"/>
+        <mapping class="cn.edu.cqupt.my.NewMsgUnread"/>
+        <mapping class="cn.edu.cqupt.my.IoTdevice"/>
+        <mapping class="cn.edu.cqupt.my.iotRec"/>
+    </list>
+</litepal>

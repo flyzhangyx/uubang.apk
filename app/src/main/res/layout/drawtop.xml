@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingTop="30dp"
+    android:paddingLeft="16dp"
+    android:id="@+id/Draw_top">
+    <!--<ImageView-->
+        <!--android:id="@+id/drawer_header_userHead"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"/>-->
+        <!--android:background="@drawable/pig"/>-->
+    <WebView
+        android:id="@+id/user_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/drawer_header_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/user_head"
+        android:textSize="16sp"
+        android:textColor="#080808"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawer_header_userName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/user_head"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="个性签名"
+        android:textColor="#060606"
+        android:textSize="12sp" />
+</RelativeLayout>

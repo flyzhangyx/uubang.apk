@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <!-- <android.support.design.widget.TabLayout
+        android:id="@+id/home_viewpager_tab"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#ffffff"
+        app:tabIndicatorColor="#479562"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#479562"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#479562" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <cn.edu.cqupt.my.title
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/networkhome"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:text="   网络连接丢失，点击设置 >"
+        android:gravity="fill_vertical"
+        android:background="@drawable/abc2"
+        />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/Home_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc2">
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/Home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/messageun" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/qw"
+    android:layout_height="match_parent"
+    tools:context=".ReplyAddActivity">
+    <include layout="@layout/title1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="是否同意好友请求？"
+            android:textColor="@drawable/btn_pressed"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="267dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonrefuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed"
+            android:text="拒绝" />
+
+        <Button
+            android:id="@+id/buttonagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed"
+            android:text="同意" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

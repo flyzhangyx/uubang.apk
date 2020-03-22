@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:background="#d8e0e8"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title1"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_talkview"
+        android:background="#5c8963"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+    <LinearLayout android:background="#668d6c"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:hint="请输入"/>
+        <Button
+            android:id="@+id/send_button"
+            android:layout_height="wrap_content"
+            android:background="#668d6c"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

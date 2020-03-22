@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawlayout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <RadioGroup
+        android:gravity="center"
+        android:id="@+id/rg_bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#668d6c"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:layout_weight="0.33333"
+            android:drawableTop="@drawable/bottom_home_selector"
+            android:gravity="center"
+            android:text="消息" />
+        <RadioButton
+            android:text="联系人"
+            android:id="@+id/rb_news"
+            android:layout_weight="0.33333"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_news_selector"
+            />
+        <RadioButton
+            android:text="更多"
+            android:id="@+id/rb_person"
+            android:layout_weight="0.33333"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_person_selector"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/design_navigation_viewq"
+        android:layout_width="match_parent"
+        android:background="@drawable/mr_right"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/drawtop"
+        app:menu="@menu/draw_home_layout"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
